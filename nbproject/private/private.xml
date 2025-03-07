@@ -4,10 +4,12 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/Model/Cliente.java</file>
-            <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/Model/Banco.java</file>
-            <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/Model/Transaccion.java</file>
-            <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/View/MenuPrincipal.java</file>
-            <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/Model/Cuenta.java</file>
+            <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/View/datosEstudiante.java</file>
+            <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/View/crearUsuario.java</file>
+            <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/Controller/registroUsuarioController.java</file>
+            <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/Controller/menuPrincipalController.java</file>
+            <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/View/Login.java</file>
+            <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/bancausac/BancaUsac.java</file>
         </group>
     </open-files>
 </project-private>
