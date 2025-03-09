@@ -8,8 +8,8 @@ import javax.swing.JFrame;
  * @author charl
  */
 public class loginController {
-    private static final String USUARIO_CORRECTO= "1";
-    private static final String CONTRASEÑA_CORRECTA = "1";
+    private static final String USUARIO_CORRECTO= "ipcD1s2025";
+    private static final String CONTRASEÑA_CORRECTA = "ipcLogin";
     
     public void validarCredenciales (String usuario, String contraseña, JFrame loginFrame){
         if (usuario.equals(USUARIO_CORRECTO) && contraseña.equals(CONTRASEÑA_CORRECTA)){

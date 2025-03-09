@@ -1,16 +1,20 @@
 
 package View;
 
+import javax.swing.JFrame;
+
 /*
 @author charl
  */
 public class crearUsuario extends javax.swing.JFrame {
+    
 
     /**
      * Creates new form crearUsuario
      */
     public crearUsuario() {
         initComponents();
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**

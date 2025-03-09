@@ -1,8 +1,9 @@
 
 package View;
 
+import javax.swing.JFrame;
+
 /**
- *
  * @author charl
  */
 public class buscarCuentasAsociadas extends javax.swing.JFrame {
@@ -12,6 +13,7 @@ public class buscarCuentasAsociadas extends javax.swing.JFrame {
      */
     public buscarCuentasAsociadas() {
         initComponents();
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -29,7 +31,7 @@ public class buscarCuentasAsociadas extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tableCuentasUsuarios = new javax.swing.JTable();
-        tbnBuscarCuentas = new javax.swing.JButton();
+        btnBuscarCuentas = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -43,7 +45,15 @@ public class buscarCuentasAsociadas extends javax.swing.JFrame {
             new String [] {
                 "CUI", "Nombre", "Apellido"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane1.setViewportView(tableUsuarios);
 
         txtBuscarPorCui.addActionListener(new java.awt.event.ActionListener() {
@@ -65,12 +75,20 @@ public class buscarCuentasAsociadas extends javax.swing.JFrame {
             new String [] {
                 "Id"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane2.setViewportView(tableCuentasUsuarios);
 
-        tbnBuscarCuentas.setBackground(new java.awt.Color(204, 255, 204));
-        tbnBuscarCuentas.setForeground(new java.awt.Color(0, 0, 0));
-        tbnBuscarCuentas.setText("Buscar");
+        btnBuscarCuentas.setBackground(new java.awt.Color(204, 255, 204));
+        btnBuscarCuentas.setForeground(new java.awt.Color(0, 0, 0));
+        btnBuscarCuentas.setText("Buscar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -87,7 +105,7 @@ public class buscarCuentasAsociadas extends javax.swing.JFrame {
                         .addComponent(txtBuscarPorCui, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(81, 81, 81)
-                        .addComponent(tbnBuscarCuentas, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnBuscarCuentas, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(60, 60, 60))
@@ -103,7 +121,7 @@ public class buscarCuentasAsociadas extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtBuscarPorCui, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29)
-                        .addComponent(tbnBuscarCuentas, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnBuscarCuentas, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -120,15 +138,27 @@ public class buscarCuentasAsociadas extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-  
+    public javax.swing.JTable getTableUsuarios(){
+      return tableUsuarios;
+    }
+    public javax.swing.JTable getTableCuentasUsuarios(){
+        return tableCuentasUsuarios;
+    }
+    public javax.swing.JTextField getTxtBuscarPorCui(){
+        return txtBuscarPorCui;
+    }
+    
+    public javax.swing.JButton getBtnBuscarCuentas(){
+        return btnBuscarCuentas;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBuscarCuentas;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable tableCuentasUsuarios;
     private javax.swing.JTable tableUsuarios;
-    private javax.swing.JButton tbnBuscarCuentas;
     private javax.swing.JTextField txtBuscarPorCui;
     // End of variables declaration//GEN-END:variables
 }

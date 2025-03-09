@@ -45,7 +45,7 @@ public class Banco {
     public boolean crearCuenta(String CUI,String idCuenta){
         Cliente cliente = buscarCliente(CUI);
         if(cliente != null){
-            Cuenta nuevaCuenta = new Cuenta(CUI);
+            Cuenta nuevaCuenta = new Cuenta(idCuenta);
             return cliente.agregarCuenta(nuevaCuenta);
         }else{
             return  false;

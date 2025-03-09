@@ -1,8 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package View;
+
+import javax.swing.JFrame;
 
 /**
  *
@@ -15,6 +14,7 @@ public class vistaRetiros extends javax.swing.JFrame {
      */
     public vistaRetiros() {
         initComponents();
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -126,7 +126,15 @@ public class vistaRetiros extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-
+    public javax.swing.JButton getBtnDepositar(){
+        return btnDepositar;
+    }
+    public javax.swing.JComboBox<String> getComboCuentas(){
+        return comboCuentas;
+    }
+    public javax.swing.JTextField getTxtMonto(){
+        return txtMonto;
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDepositar;
     private javax.swing.JComboBox<String> comboCuentas;

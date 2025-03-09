@@ -1,7 +1,4 @@
-/*
- * 
- * 
- */
+
 package Model;
 
 /**
@@ -54,10 +51,6 @@ public class Cuenta {
     }
     
      public boolean realizarDeposito(double monto) {
-        if (monto <= 0) {
-            return false; 
-        }
-
         // Crear una nueva transacción de depósito
         Transaccion deposito = new Transaccion(
             "TXN" + (numTransacciones + 1), // ID de la transacción
@@ -86,15 +79,10 @@ public class Cuenta {
         }
     }
      public boolean realizarRetiro(double monto) {
-    
-    if (monto <= 0 || monto > saldoCuenta) {
-        return false; 
-    }
-
- 
+   
     Transaccion retiro = new Transaccion(
         "TXN" + (numTransacciones + 1), 
-        "retiro",                       
+        "debito",                       
         monto,                         
         0.0                            
     );

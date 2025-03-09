@@ -1,11 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package View;
 
+import javax.swing.JFrame;
+
 /**
- *
  * @author charl
  */
 public class crearCuenta extends javax.swing.JFrame {
@@ -15,6 +13,7 @@ public class crearCuenta extends javax.swing.JFrame {
      */
     public crearCuenta() {
         initComponents();
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -34,6 +33,12 @@ public class crearCuenta extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Crear Cuenta");
+
+        cmbxClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbxClientesActionPerformed(evt);
+            }
+        });
 
         btnCrearCuenta.setBackground(new java.awt.Color(204, 255, 204));
         btnCrearCuenta.setForeground(new java.awt.Color(0, 0, 0));
@@ -80,11 +85,20 @@ public class crearCuenta extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCrearCuentaActionPerformed
 
+    private void cmbxClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbxClientesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbxClientesActionPerformed
+
     /**
      * @param args the command line arguments
      */
    
-
+    public javax.swing.JComboBox<String> getCmbxClientes(){
+        return cmbxClientes;
+    }
+    public javax.swing.JButton getBtnCrearCuenta(){
+        return btnCrearCuenta;
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCrearCuenta;
     private javax.swing.JComboBox<String> cmbxClientes;

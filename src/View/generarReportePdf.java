@@ -1,8 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package View;
+
+import javax.swing.JButton;
+import javax.swing.JTextField;
 
 /**
  *
@@ -141,6 +141,25 @@ public class generarReportePdf extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+
+    public JButton getBtnGenerarHistorialDebito() {
+        return btnGenerarHistorialDebito;
+    }
+
+    public JButton getBtnGenerarHistorialTransaccion() {
+        return btnGenerarHistorialTransaccion;
+    }
+
+    public JButton getBtnGererarHistorialdeCredito() {
+        return btnGererarHistorialdeCredito;
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public JTextField getTxtCuenta() {
+        return txtCuenta;
+    }
    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

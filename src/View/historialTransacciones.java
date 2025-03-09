@@ -1,8 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package View;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTable;
+import javax.swing.JTextField;
 
 /**
  *
@@ -15,6 +17,8 @@ public class historialTransacciones extends javax.swing.JFrame {
      */
     public historialTransacciones() {
         initComponents();
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
     }
 
     /**
@@ -197,7 +201,27 @@ public class historialTransacciones extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     
+    public JButton getBtnBuscarCuenta(){
+        return btnBuscarCuenta;
+    }
+    public JTable getTableReporte(){
+        return tableReporte;
+    }
+    public JTextField getTxtSolicitarIdCuenta(){
+        return txtSolicitarIdCuenta;
+    }
+    public JTextField getTxtMostrarCui(){
+        return txtMostrarCui;
+    }
 
+    public JTextField getTxtMostrarApellido() {
+        return txtMostrarApellido;
+    }
+
+    public JTextField getTxtMostrarNombre() {
+        return txtMostrarNombre;
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscarCuenta;
     private javax.swing.JLabel jLabel1;
