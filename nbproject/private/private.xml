@@ -5,9 +5,11 @@
         <group>
             <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/Controller/historialTransaccionesController.java</file>
             <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/Model/Banco.java</file>
+            <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/Controller/vistaDepositosController.java</file>
             <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/Model/Transaccion.java</file>
             <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/Controller/generarReporteController.java</file>
             <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/View/generarReportePdf.java</file>
+            <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/Controller/vistaDebitosController.java</file>
             <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/Controller/menuPrincipalController.java</file>
             <file>file:/C:/Users/charl/OneDrive/Documentos/NetBeansProjects/BancaUsac/src/Model/Cuenta.java</file>
         </group>

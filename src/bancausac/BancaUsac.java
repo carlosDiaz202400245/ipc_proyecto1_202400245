@@ -1,8 +1,8 @@
 
 package bancausac;
 
-import Controller.loginController;
-import View.Login;
+import Controllers.loginController;
+import View.LoginView;
 
 /**
  *
@@ -11,7 +11,7 @@ import View.Login;
 public class BancaUsac {
 
     public static void main(String[] args) {
-       Login vistaLogin = new Login();
+       LoginView vistaLogin = new LoginView();
        
        loginController controller = new loginController();
        
